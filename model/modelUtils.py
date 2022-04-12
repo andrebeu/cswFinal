@@ -6,11 +6,7 @@ from itertools import product
 import time
 import seaborn as sns
 sns.set_context('talk')
-
 from model import *
-## import human data for fitting
-hdf = pd.read_csv('../human_data.csv')
-humanB_acc,humanI_acc = hdf.loc[:,('blocked mean','interleaved mean')].values.T
 
 FLAG_SMACC = True
 SMTEMP = 4  

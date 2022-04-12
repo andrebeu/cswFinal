@@ -19,7 +19,7 @@ J_ = 2
 if MAKE_DATADF:
     for jdx in range(1*J_):
         print('jdx',jdx)
-        dfpathL = glob('data/%s/*'%gsname)
+        dfpathL = glob('data/gridsearch/%s/*'%gsname)
         datadfL = []
         for idx in np.arange(jdx*1000+INNER_SIZE,jdx*1000+1001,INNER_SIZE):
             print(idx-INNER_SIZE,idx)
@@ -104,7 +104,7 @@ def make_exp_summ_df(exp_data_df,split_acc_bool=True):
 ## NEW STRATEGY: does not require intermediate datadf
 if MAKE_SUMMDF:
     print('make summary df')
-    dfpathL = glob('data/%s/*'%gsname)
+    dfpathL = glob('data/gridsearch/%s/*'%gsname)
     mini_summdf_L = []
     for idx in np.arange(INNER_SIZE,1000*J_+1,INNER_SIZE):
         print(idx-INNER_SIZE,idx)
@@ -131,37 +131,6 @@ if MAKE_SUMMDF:
     gsdf = pd.concat(mini_summdf_L)
     gsdf.to_csv('data/%s-summdf.csv'%gsname)
 
-
-
-
-
-### old strategy fails because large data volumes
-if False:
-    print('making summdf')
-    ## compute summary df
-    groupvars = paramL 
-    gsdf_group = datadf.groupby(groupvars)
-    del datadf
-    print('grouped')
-    dfL = []
-    ### BOTTLENECK GSDF_GROUP IS TOO LARGE TO UNPACK
-    for params_i,df_i in gsdf_group:
-      print(params_i)
-      dataD = {**dict(zip(groupvars,params_i))}
-      ## loop conditions (BIEML)
-      for cond_i,df_c in df_i.groupby('cond'):
-        ## compute metrics
-        testacc = np.mean(df_c.acc[-40:])
-        ## populate dataD
-        dataD['testacc-%s'%cond_i[0]] = testacc
-      
-      print('append') 
-      dfL.append(pd.DataFrame(index=[0],data=dataD))
-      ##
-    print('cating')
-    gsdf = pd.concat(dfL)
-    print('saving summdf')
-    gsdf.to_csv('data/%s-summdf.csv'%gsname)
 
 
 

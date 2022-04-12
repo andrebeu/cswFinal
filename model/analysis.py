@@ -9,11 +9,7 @@ sns.set_context('talk')
 from sklearn.metrics import adjusted_rand_score
 
 from model import *
-from utils import unpack_acc
-## import human data for fitting
-hdf = pd.read_csv('../human_data.csv')
-humanB_acc,humanI_acc = hdf.loc[:,('blocked mean','interleaved mean')].values.T
-
+from modelUtils import unpack_acc
 
 condL = ['blocked','interleaved',
          'early','middle','late'
