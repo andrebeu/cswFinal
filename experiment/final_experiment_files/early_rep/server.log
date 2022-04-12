@@ -1,0 +1,527 @@
+2019-09-26 15:55:11,228 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+2019-09-26 15:55:11,233 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 15:55:11 +0000] [2015] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 78, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+[2019-09-26 15:55:11 +0000] [2014] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 78, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 15:55:11,324 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 15:55:11 +0000] [2018] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 78, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 15:55:11,472 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 15:55:11 +0000] [2017] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 78, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 15:55:11,515 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 15:55:11 +0000] [2016] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 78, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 16:02:06,292 Scheduler started
+2019-09-26 16:02:06,294 Scheduler started
+2019-09-26 16:02:06,296 Scheduler started
+2019-09-26 16:02:06,299 Scheduler started
+2019-09-26 16:02:06,302 Scheduler started
+2019-09-26 16:02:06,397 Looking for jobs to run
+2019-09-26 16:02:06,402 No jobs; waiting until a job is added
+2019-09-26 16:02:06,416 Looking for jobs to run
+2019-09-26 16:02:06,422 No jobs; waiting until a job is added
+2019-09-26 16:02:06,442 Looking for jobs to run
+2019-09-26 16:02:06,447 No jobs; waiting until a job is added
+2019-09-26 16:02:06,449 Looking for jobs to run
+2019-09-26 16:02:06,455 No jobs; waiting until a job is added
+2019-09-26 16:02:06,457 Looking for jobs to run
+2019-09-26 16:02:06,462 No jobs; waiting until a job is added
+2019-09-26 19:32:36,890 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 19:32:36 +0000] [5654] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 19:32:37,111 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 19:32:37 +0000] [5657] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 19:32:37,236 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 19:32:37 +0000] [5655] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 19:32:37,337 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 19:32:37 +0000] [5660] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 19:32:37,374 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 19:32:37 +0000] [5658] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 19:32:54,846 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 19:32:54 +0000] [5693] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 19:32:55,158 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+2019-09-26 19:32:55,165 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 19:32:55 +0000] [5696] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+[2019-09-26 19:32:55 +0000] [5694] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 19:32:55,274 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 19:32:55 +0000] [5697] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 19:32:55,312 There is custom code (custom.py) associated with this                           project but it doesn't import cleanly.  Raising exception,
+[2019-09-26 19:32:55 +0000] [5699] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-csw/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190922125202/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+2019-09-26 19:42:27,487 Scheduler started
+2019-09-26 19:42:27,488 Scheduler started
+2019-09-26 19:42:27,490 Scheduler started
+2019-09-26 19:42:27,490 Scheduler started
+2019-09-26 19:42:27,493 Scheduler started
+2019-09-26 19:42:27,778 Looking for jobs to run
+2019-09-26 19:42:27,779 Looking for jobs to run
+2019-09-26 19:42:27,783 No jobs; waiting until a job is added
+2019-09-26 19:42:27,784 No jobs; waiting until a job is added
+2019-09-26 19:42:27,785 Looking for jobs to run
+2019-09-26 19:42:27,786 Looking for jobs to run
+2019-09-26 19:42:27,790 No jobs; waiting until a job is added
+2019-09-26 19:42:27,791 No jobs; waiting until a job is added
+2019-09-26 19:42:27,794 Looking for jobs to run
+2019-09-26 19:42:27,799 No jobs; waiting until a job is added
+2019-09-27 10:22:10,528 hit_not_registered_with_ad_server (1018) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3UN61F00HXLERWWHBEYWR02CBVF5RA', 'workerId': 'A12OZ7P7Z41SJI', 'mode': 'live'}
+2019-09-27 10:25:05,730 already_did_exp_hit (1010) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3Y9N9SS8LZ7HC7Q8FUFJ7ENOIYX3DC', 'workerId': 'A37OUZOGQKGMW0', 'mode': 'live'}
+2019-09-27 10:27:25,300 already_did_exp_hit (1010) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3EFVCAY5L45GGQW617WQ1TQC34M8JN', 'workerId': 'A147F5PJTHOB8A', 'mode': 'live'}
+2019-09-27 10:27:40,222 already_did_exp_hit (1010) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3EFVCAY5L45GGQW617WQ1TQC34M8JN', 'workerId': 'A147F5PJTHOB8A', 'mode': 'live'}
+2019-09-27 10:30:19,590 already_did_exp_hit (1010) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3ZY8KE4ISKZVDPWW4QR9Q8M6SXEQV0', 'workerId': 'A248QG4DPULP46', 'mode': 'live'}
+2019-09-27 10:33:06,984 hit_not_registered_with_ad_server (1018) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '31Z0PCVWULB6UFNS3WIOPZHQQM6T7P', 'workerId': 'A3R457FAWQXZN3', 'mode': 'live'}
+2019-09-27 10:46:17,562 hit_not_registered_with_ad_server (1018) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3WOKGM4L72CCZCI0MGBGGA1GJ0K0OB', 'workerId': 'A3MJCHFORYK0US', 'mode': 'live'}
+2019-09-27 11:00:24,096 already_did_exp_hit (1010) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3ZY8KE4ISKZVDPWW4QR9Q8M6SXEQV0', 'workerId': 'AH4MHB0B0PJMU', 'mode': 'live'}
+2019-09-27 11:03:08,330 hit_not_registered_with_ad_server (1018) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3R5F3LQFV3G91XOQQAO8M942172OZQ', 'workerId': 'A18AP8I010IFW1', 'mode': 'live'}
+2019-09-27 11:25:30,167 hit_not_registered_with_ad_server (1018) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3JV9LGBJWUA9AGTL0I0J12OWQH8GOT', 'workerId': 'A33UY8EOVBGFX0', 'mode': 'live'}
+2019-09-27 11:36:10,223 already_did_exp_hit (1010) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3FK0YFF9P0CNIXSDQPLJWVLE9PTVVZ', 'workerId': 'A2NY4882G47O1C', 'mode': 'live'}
+2019-09-27 11:37:31,388 hit_not_registered_with_ad_server (1018) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3UN61F00HXLERWWHBEYWR02CBVF5RA', 'workerId': 'A1B4778ETVFAL8', 'mode': 'live'}
+2019-09-27 12:39:57,070 already_did_exp_hit (1010) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3K9FOBBF2IF7EN7AAUXMZ5TZWP1LN3', 'workerId': 'A2S75O867RJG0I', 'mode': 'live'}
+2019-09-27 13:16:48,854 already_did_exp_hit (1010) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3PS7W85Z80YA8YBLITG83V8WLCUT91', 'workerId': 'A1V1JNPU0KOA3X', 'mode': 'live'}
+2019-09-27 13:18:02,259 already_did_exp_hit (1010) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3PS7W85Z80YA8YBLITG83V8WLCUT91', 'workerId': 'A1V1JNPU0KOA3X', 'mode': 'live'}
+2019-09-27 13:22:25,236 hit_not_registered_with_ad_server (1018) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '3PS7W85Z80YA8YBLITG83V8WLCUT91', 'workerId': 'A1X0CR6FL88QEZ', 'mode': 'live'}
+2019-09-27 14:34:41,553 hit_not_registered_with_ad_server (1018) {'hitId': '36BTXXLZ2V4T9TVO77AKYO0C2684RL', 'assignmentId': '33TIN5LC0566PKAFSZ37BC0B0FAY9V', 'workerId': 'A1CUQR0X6P3N3R', 'mode': 'live'}

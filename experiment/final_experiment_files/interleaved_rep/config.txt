@@ -1,0 +1,31 @@
+[HIT Configuration]
+title = __ Coffee Shop World Experiment __
+description = Read stories and make predictions.
+amt_keywords = Memory, Language, Psychology, experiment
+lifetime = 1200
+approve_requirement = 95
+ad_group = jspsych simple experiment example
+psiturk_keywords = Memory, Language, Semantics, 
+browser_exclude_rule = MSIE, mobile, tablet
+
+[Database Parameters]
+database_url = sqlite:///CSWparticipants.db
+table_name = CSWfall18
+
+[Server Parameters]
+host = 0.0.0.0
+port = 9009
+cutoff_time = 20
+logfile = server.log
+loglevel = 2
+debug = true
+threads = auto
+secret_key = 'key123'
+
+[Task Parameters]
+experiment_code_version = RT01B1000cl
+num_conds = 99
+num_counters = 1
+
+[Shell Parameters]
+launch_in_sandbox_mode = true

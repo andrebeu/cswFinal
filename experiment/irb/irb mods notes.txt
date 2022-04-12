@@ -1,0 +1,28 @@
+find 2 properties not gendered
+host experiment on server
+
+-- IRB 
+
+finish editing and attach consent form
+
+--
+
+explain stim is computer generated so that it changes
+give a few snippets of the story
+range of stories will be used
+content of story innocent
+
+dont say 'not innocuous' say 'd/n contain disturbing content'
+
+the example stimulus submitted here represents the upper end of the degree of conflict that would be depicted. 
+
+give link 
+
+we want to use multiple schemas, here are two examples of schemas, we plan to use others of exactly this form 
+
+
+Although our planned experiments deal with the effects of a wide range of manipulations on memory performance, all of the experiments have the same structure: Subjects are presented with a series of stimuli (presented using a computer). Subjects’ memory for these stimuli may then be tested in a subsequent testing phase. Some experiments will use visual stimuli (e.g., visual scenes, faces, words, or objects) and others will use auditory stimuli (e.g., a recording of a person speaking a word). See Appendix C for sample stimuli. The specific task that subjects perform during the study (memorization) phase will vary according to the purpose of the experiment; example tasks include judging whether a word is abstract or concrete, or judging how visually appealing a scene is, or simply asking subjects to try to remember the stimuli (without any further instructions regarding how to achieve this goal). 
+
+All stimuli used during in this study will be innocuous, that is, neither emotional, offensive nor stressful. 
+
+Likewise, the structure of the memory test will vary across experiments; for example, some experiments might use a recognition test (did you see this item earlier in the experiment), others might use a free recall test (tell me all of the items you studied), and others might use an implicit measure (e.g., reading speed) that is sensitive to whether items were presented at study.

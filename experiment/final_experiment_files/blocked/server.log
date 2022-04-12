@@ -1,0 +1,302 @@
+[2019-04-22 15:21:27 +0000] [18190] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190407110215/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190407110215/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+[2019-04-22 15:21:27 +0000] [18189] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190407110215/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190407110215/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+[2019-04-22 15:21:27 +0000] [18195] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190407110215/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190407110215/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+[2019-04-22 15:21:27 +0000] [18192] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190407110215/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190407110215/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+[2019-04-22 15:21:27 +0000] [18194] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190407110215/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment_server.py", line 48, in load
+    return util.import_app("psiturk.experiment:app")
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/psiturk/experiment.py", line 77, in <module>
+    from custom import custom_code
+  File "/home/abeukers/csw/exp_190407110215/custom.py", line 23, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+[2019-04-23 08:24:07 +0000] [1111] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:07 +0000] [1111] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:08 +0000] [1111] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:08 +0000] [1111] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:09 +0000] [1111] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:09 +0000] [1111] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:10 +0000] [1111] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:10 +0000] [1111] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:11 +0000] [1111] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:11 +0000] [1111] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:12 +0000] [1111] [ERROR] Can't connect to ('0.0.0.0', 9009)
+[2019-04-23 08:24:31 +0000] [1143] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:31 +0000] [1143] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:32 +0000] [1143] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:32 +0000] [1143] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:33 +0000] [1143] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:33 +0000] [1143] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:34 +0000] [1143] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:34 +0000] [1143] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:35 +0000] [1143] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:35 +0000] [1143] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:36 +0000] [1143] [ERROR] Can't connect to ('0.0.0.0', 9009)
+[2019-04-23 08:24:38 +0000] [1158] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:38 +0000] [1158] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:39 +0000] [1158] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:39 +0000] [1158] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:40 +0000] [1158] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:40 +0000] [1158] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:41 +0000] [1158] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:41 +0000] [1158] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:42 +0000] [1158] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:42 +0000] [1158] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:43 +0000] [1158] [ERROR] Can't connect to ('0.0.0.0', 9009)
+[2019-04-23 08:24:56 +0000] [1189] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:56 +0000] [1189] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:57 +0000] [1189] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:57 +0000] [1189] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:58 +0000] [1189] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:58 +0000] [1189] [ERROR] Retrying in 1 second.
+[2019-04-23 08:24:59 +0000] [1189] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:24:59 +0000] [1189] [ERROR] Retrying in 1 second.
+[2019-04-23 08:25:00 +0000] [1189] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:25:00 +0000] [1189] [ERROR] Retrying in 1 second.
+[2019-04-23 08:25:01 +0000] [1189] [ERROR] Can't connect to ('0.0.0.0', 9009)
+[2019-04-23 08:25:18 +0000] [1275] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:25:18 +0000] [1275] [ERROR] Retrying in 1 second.
+[2019-04-23 08:25:19 +0000] [1275] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:25:19 +0000] [1275] [ERROR] Retrying in 1 second.
+[2019-04-23 08:25:20 +0000] [1275] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:25:20 +0000] [1275] [ERROR] Retrying in 1 second.
+[2019-04-23 08:25:21 +0000] [1275] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:25:21 +0000] [1275] [ERROR] Retrying in 1 second.
+[2019-04-23 08:25:22 +0000] [1275] [ERROR] Connection in use: ('0.0.0.0', 9009)
+[2019-04-23 08:25:22 +0000] [1275] [ERROR] Retrying in 1 second.
+[2019-04-23 08:25:23 +0000] [1275] [ERROR] Can't connect to ('0.0.0.0', 9009)
+[2019-04-23 08:29:25 +0000] [18406] [CRITICAL] WORKER TIMEOUT (pid:18414)
+[2019-04-23 08:29:43 +0000] [18406] [CRITICAL] WORKER TIMEOUT (pid:18413)
+[2019-04-23 08:33:44 +0000] [18406] [CRITICAL] WORKER TIMEOUT (pid:18410)
+[2019-04-23 08:33:44 +0000] [18406] [CRITICAL] WORKER TIMEOUT (pid:18411)
+[2019-04-23 08:33:44 +0000] [18406] [CRITICAL] WORKER TIMEOUT (pid:1975)
+[2019-04-23 08:33:44 +0000] [18406] [CRITICAL] WORKER TIMEOUT (pid:1977)
+[2019-04-23 11:26:43 +0000] [3396] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 129, in handle
+    req = six.next(parser)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/message.py", line 153, in __init__
+    super(Request, self).__init__(cfg, unreader)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/message.py", line 53, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/message.py", line 165, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/message.py", line 156, in get_data
+    data = unreader.read()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/unreader.py", line 38, in read
+    d = self.chunk()
+  File "/home/abeukers/.conda/envs/psiturk-latest/lib/python2.7/site-packages/gunicorn/http/unreader.py", line 65, in chunk
+    return self.sock.recv(self.mxchunk)
+error: [Errno 4] Interrupted system call
+[2019-04-23 14:17:34 +0000] [5035] [CRITICAL] WORKER TIMEOUT (pid:5039)
+[2019-04-24 09:32:38 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:22674)
+[2019-04-24 09:43:43 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:22672)
+[2019-04-24 09:46:23 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:22668)
+[2019-04-24 10:07:47 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:22669)
+[2019-04-24 10:07:47 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:22670)
+[2019-04-24 10:09:54 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:24331)
+[2019-04-24 10:10:02 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:24338)
+[2019-04-24 10:48:15 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:24753)
+[2019-04-24 11:06:49 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:24750)
+[2019-04-24 11:07:04 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:24755)
+[2019-04-24 11:07:12 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:24749)
+[2019-04-24 11:39:29 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:25566)
+[2019-04-24 12:11:07 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:24335)
+[2019-04-24 12:11:28 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:25156)
+[2019-04-24 14:06:26 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:26388)
+[2019-04-24 14:11:42 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:26390)
+[2019-04-24 14:15:21,504] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3KMS4QQVK3MK6PCBR628C07AECYFKA'], 'workerId': [u'AUCHGHY1IKZZK'], 'hitId': [u'3D1TUISJWIWFXSMKWQ7TX0XE5X6IUK'], 'mode': [u'live']}
+[2019-04-24 14:15:59 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:25570)
+[2019-04-24 14:17:18 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:28201)
+[2019-04-24 14:41:05 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:25974)
+[2019-04-24 14:58:05,389] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'392CY0QWG2NJ2EPY7MLD8GV6XI0I4E'], 'workerId': [u'A2V35L3RIRYYXV'], 'hitId': [u'3D1TUISJWIWFXSMKWQ7TX0XE5X6IUK'], 'mode': [u'live']}
+[2019-04-24 15:06:55 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:28209)
+[2019-04-24 15:14:09 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:28609)
+[2019-04-24 15:14:09 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:28204)
+[2019-04-24 15:14:35 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:28206)
+[2019-04-24 15:36:17 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:29067)
+[2019-04-24 16:31:44,083] ERROR in experiment: hit_assign_worker_id_not_set_in_exp (1003) {'assignmentId': [u'3PXX5PX6LYUOHVR9AD3NZWDTU2CAB8'], 'hitId': [u'3D1TUISJWIWFXSMKWQ7TX0XE5X6IUK'], u'work\u2026': [u'']}
+[2019-04-24 16:32:44,031] ERROR in experiment: already_started_exp (1008) {'assignmentId': [u'3PXX5PX6LYUOHVR9AD3NZWDTU2CAB8'], 'workerId': [u'A15PUZKRWJH0EY'], 'hitId': [u'3D1TUISJWIWFXSMKWQ7TX0XE5X6IUK'], 'mode': [u'live']}
+[2019-04-24 17:16:11 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:29063)
+[2019-04-24 23:06:58,258] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3PDJHANYK6CXL6ISKSW752E5T0X6H8'], 'workerId': [u'A2OEK75DGI4PW2'], 'hitId': [u'3UEDKCTP9VM45C0CJLZU0OY7PRNK7M'], 'mode': [u'live']}
+[2019-04-24 23:09:14,043] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3PDJHANYK6CXL6ISKSW752E5T0X6H8'], 'workerId': [u'A3C5G8LGIAW0XL'], 'hitId': [u'3UEDKCTP9VM45C0CJLZU0OY7PRNK7M'], 'mode': [u'live']}
+[2019-04-24 23:12:27,339] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3G5F9DBFOQTI0WXTL04FHUU4AREVHA'], 'workerId': [u'A6FE2ZQNFW12V'], 'hitId': [u'3UEDKCTP9VM45C0CJLZU0OY7PRNK7M'], 'mode': [u'live']}
+[2019-04-24 23:15:51,491] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3G5F9DBFOQTI0WXTL04FHUU4AREVHA'], 'workerId': [u'A6FE2ZQNFW12V'], 'hitId': [u'3UEDKCTP9VM45C0CJLZU0OY7PRNK7M'], 'mode': [u'live']}
+[2019-04-24 23:16:19,120] ERROR in experiment: already_did_exp_hit (1010) {'assignmentId': [u'3G5F9DBFOQTI0WXTL04FHUU4AREVHA'], 'workerId': [u'A6FE2ZQNFW12V'], 'hitId': [u'3UEDKCTP9VM45C0CJLZU0OY7PRNK7M'], 'mode': [u'live']}
+[2019-04-25 00:10:55 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:29064)
+[2019-04-25 04:21:46 +0000] [22664] [CRITICAL] WORKER TIMEOUT (pid:29530)

@@ -1,0 +1,26 @@
+WORKFLOW
+
+1) update config file
+  a) in mturk_template config file: 
+  i) ensure num_conds < num_subs to be generated
+  ii) do not change table name!
+  iii) change "experiment code version" to current date
+
+2) adjust engine parameters:
+  a) define SCH & ONT
+  b) adjust probability of question in engine
+  c) whether transitions are conditioned or unconditioned
+  d) run cswTests if necessary
+
+3) generate task scripts
+  a) ensure exp.html file in csw template 
+     in experiments folder is setup to randomize conditions
+  b) call generate_experiments.sh [subs] [stories]
+	
+
+4) launch experiment
+  a) logon to psiturk-abeukers.princeton.edu
+  a) cd into most recent experiment folder
+  b) start a tmux environment (tmux)
+  c) source activate psiturk
+  d) psiturk, mode, server on, hit create

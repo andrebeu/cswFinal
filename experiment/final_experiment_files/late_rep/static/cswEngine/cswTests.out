@@ -1,0 +1,409 @@
+
+
+--params--
+
+qpr 1.0
+filler qpr 0.25
+cond True
+burnin 0
+
+
+--conditional node statistics--
+
+
+BEGIN
+-avg over rfcs: {'LOCNODEB': 0.48, 'LOCNODEC': 0.52}
+-nominal: {'location.latent.true': {NodeObj.LOCNODEC: 1.0, NodeObj.LOCNODEB: 0.0}, 'location.latent.false': {NodeObj.LOCNODEC: 0.0, NodeObj.LOCNODEB: 1.0}}
+-empirical: location.latent.true	{'LOCNODEC': 1.0}
+-empirical: location.latent.false	{'LOCNODEB': 1.0}
+
+LOCNODEB
+-avg over rfcs: {'NODE11': 0.46, 'NODE12': 0.54}
+-nominal: {'location.latent.true': {NodeObj.NODE11: 0.5, NodeObj.NODE12: 0.5}, 'location.latent.false': {NodeObj.NODE11: 0.5, NodeObj.NODE12: 0.5}}
+-empirical: location.latent.true	{'NODE11': 0.53, 'NODE12': 0.47}
+-empirical: location.latent.false	{'NODE11': 0.54, 'NODE12': 0.46}
+
+LOCNODEC
+-avg over rfcs: {'NODE11': 0.56, 'NODE12': 0.44}
+-nominal: {'location.latent.true': {NodeObj.NODE11: 0.5, NodeObj.NODE12: 0.5}, 'location.latent.false': {NodeObj.NODE11: 0.5, NodeObj.NODE12: 0.5}}
+-empirical: location.latent.true	{'NODE11': 0.53, 'NODE12': 0.47}
+-empirical: location.latent.false	{'NODE11': 0.58, 'NODE12': 0.42}
+
+NODE11
+-avg over rfcs: {'NODE21': 0.54, 'NODE22': 0.46}
+-nominal: {'location.latent.true': {NodeObj.NODE21: 1.0, NodeObj.NODE22: 0.0}, 'location.latent.false': {NodeObj.NODE21: 0.0, NodeObj.NODE22: 1.0}}
+-empirical: location.latent.true	{'NODE21': 1.0}
+-empirical: location.latent.false	{'NODE22': 1.0}
+
+NODE12
+-avg over rfcs: {'NODE21': 0.5, 'NODE22': 0.5}
+-nominal: {'location.latent.true': {NodeObj.NODE21: 0.0, NodeObj.NODE22: 1.0}, 'location.latent.false': {NodeObj.NODE21: 1.0, NodeObj.NODE22: 0.0}}
+-empirical: location.latent.true	{'NODE22': 1.0}
+-empirical: location.latent.false	{'NODE21': 1.0}
+
+NODE21
+-avg over rfcs: {'NODE31': 0.47, 'NODE32': 0.53}
+-nominal: {'location.latent.true': {NodeObj.NODE31: 1.0, NodeObj.NODE32: 0.0}, 'location.latent.false': {NodeObj.NODE31: 0.0, NodeObj.NODE32: 1.0}}
+-empirical: location.latent.true	{'NODE31': 1.0}
+-empirical: location.latent.false	{'NODE32': 1.0}
+
+NODE22
+-avg over rfcs: {'NODE31': 0.49, 'NODE32': 0.51}
+-nominal: {'location.latent.true': {NodeObj.NODE31: 0.0, NodeObj.NODE32: 1.0}, 'location.latent.false': {NodeObj.NODE31: 1.0, NodeObj.NODE32: 0.0}}
+-empirical: location.latent.true	{'NODE32': 1.0}
+-empirical: location.latent.false	{'NODE31': 1.0}
+
+NODE31
+-avg over rfcs: {'END': 1.0}
+-nominal: {'location.latent.true': {NodeObj.END: 1.0}, 'location.latent.false': {NodeObj.END: 1.0}}
+-empirical: location.latent.true	{'END': 1.0}
+-empirical: location.latent.false	{'END': 1.0}
+
+NODE32
+-avg over rfcs: {'END': 1.0}
+-nominal: {'location.latent.true': {NodeObj.END: 1.0}, 'location.latent.false': {NodeObj.END: 1.0}}
+-empirical: location.latent.true	{'END': 1.0}
+-empirical: location.latent.false	{'END': 1.0}
+
+
+--overall node statistics--
+
+-node visits: 
+{'BEGIN': 1.0
+'END': 1.0
+'LOCNODEB': 0.51
+'LOCNODEC': 0.49
+'NODE11': 0.52
+'NODE12': 0.48
+'NODE21': 0.53
+'NODE22': 0.47
+'NODE31': 0.52
+'NODE32': 0.48}
+
+
+--unfilled sents from all nodes--
+
+[subject.name] wants to go out today.
+[subject.name] decides to go to the Jungle Brew House.
+[subject.name] decides to go to the Deep Ocean Cafe.
+Today, [subject.name] waited in line patiently.
+[subject.name] was impatient, and decided to cut the line.
+While ordering tea, [subject.name] noticed the barista’s new mustache.
+Before ordering cake, [subject.name] took a quarter from the tip jar.
+[subject.name] then sat by the window, and read a book for hours.
+After ordering, [subject.name] stole a salt shaker and left.
+That is all that is remembered.
+
+
+--story samples--
+
+Bruce wants to go out today.
+Bruce decides to go to the Jungle Brew House.
+Bruce was impatient, and decided to cut the line.
+While ordering tea, Bruce noticed the barista’s new mustache.
+After ordering, Bruce stole a salt shaker and left.
+That is all that is remembered.
+
+
+--question samples--
+
+['Stephen decides to go to the Jungle Brew House.
+'Stephen decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Stephen took a quarter from the tip jar.
+'While ordering tea, Stephen noticed the barista’s new mustache.']
+
+['Stephen then sat by the window, and read a book for hours.
+'Janice then sat by the window, and read a book for hours.']
+
+['Jose decides to go to the Deep Ocean Cafe.
+'Jose decides to go to the Jungle Brew House.']
+
+['Before ordering cake, Jose took a quarter from the tip jar.
+'Before ordering cake, Samuel took a quarter from the tip jar.']
+
+['After ordering, Jose stole a salt shaker and left.
+'Jose then sat by the window, and read a book for hours.']
+
+['Ashley decides to go to the Jungle Brew House.
+'Ashley decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Ashley took a quarter from the tip jar.
+'While ordering tea, Ashley noticed the barista’s new mustache.']
+
+['Ashley then sat by the window, and read a book for hours.
+'Christopher then sat by the window, and read a book for hours.']
+
+['Harold decides to go to the Deep Ocean Cafe.
+'Harold decides to go to the Jungle Brew House.']
+
+['Before ordering cake, Harold took a quarter from the tip jar.
+'While ordering tea, Harold noticed the barista’s new mustache.']
+
+['After ordering, Harold stole a salt shaker and left.
+'Harold then sat by the window, and read a book for hours.']
+
+['Janet decides to go to the Deep Ocean Cafe.
+'Janet decides to go to the Jungle Brew House.']
+
+['Before ordering cake, Janet took a quarter from the tip jar.
+'While ordering tea, Janet noticed the barista’s new mustache.']
+
+['After ordering, Janet stole a salt shaker and left.
+'Janet then sat by the window, and read a book for hours.']
+
+['Robert decides to go to the Jungle Brew House.
+'Robert decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Robert took a quarter from the tip jar.
+'While ordering tea, Robert noticed the barista’s new mustache.']
+
+['Robert then sat by the window, and read a book for hours.
+'After ordering, Robert stole a salt shaker and left.']
+
+['Keith decides to go to the Deep Ocean Cafe.
+'Keith decides to go to the Jungle Brew House.']
+
+['While ordering tea, Keith noticed the barista’s new mustache.
+'Before ordering cake, Keith took a quarter from the tip jar.']
+
+['Keith then sat by the window, and read a book for hours.
+'After ordering, Keith stole a salt shaker and left.']
+
+['Susan decides to go to the Jungle Brew House.
+'Susan decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Susan took a quarter from the tip jar.
+'While ordering tea, Susan noticed the barista’s new mustache.']
+
+['Susan then sat by the window, and read a book for hours.
+'After ordering, Susan stole a salt shaker and left.']
+
+['Before ordering cake, Lawrence took a quarter from the tip jar.
+'Before ordering cake, Ronald took a quarter from the tip jar.']
+
+['After ordering, Lawrence stole a salt shaker and left.
+'Lawrence then sat by the window, and read a book for hours.']
+
+['Dorothy decides to go to the Jungle Brew House.
+'Dorothy decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Dorothy took a quarter from the tip jar.
+'Before ordering cake, David took a quarter from the tip jar.']
+
+['Dorothy then sat by the window, and read a book for hours.
+'After ordering, Dorothy stole a salt shaker and left.']
+
+['Peter decides to go to the Jungle Brew House.
+'Peter decides to go to the Deep Ocean Cafe.']
+
+['While ordering tea, Peter noticed the barista’s new mustache.
+'While ordering tea, Kimberly noticed the barista’s new mustache.']
+
+['After ordering, Peter stole a salt shaker and left.
+'Peter then sat by the window, and read a book for hours.']
+
+['Anna decides to go to the Deep Ocean Cafe.
+'Anna decides to go to the Jungle Brew House.']
+
+['While ordering tea, Anna noticed the barista’s new mustache.
+'While ordering tea, Ryan noticed the barista’s new mustache.']
+
+['Anna then sat by the window, and read a book for hours.
+'After ordering, Anna stole a salt shaker and left.']
+
+['Janet decides to go to the Deep Ocean Cafe.
+'Janet decides to go to the Jungle Brew House.']
+
+['While ordering tea, Janet noticed the barista’s new mustache.
+'Before ordering cake, Janet took a quarter from the tip jar.']
+
+['Janet then sat by the window, and read a book for hours.
+'Christina then sat by the window, and read a book for hours.']
+
+['Evelyn decides to go to the Jungle Brew House.
+'Evelyn decides to go to the Deep Ocean Cafe.']
+
+['While ordering tea, Evelyn noticed the barista’s new mustache.
+'Before ordering cake, Evelyn took a quarter from the tip jar.']
+
+['After ordering, Evelyn stole a salt shaker and left.
+'Evelyn then sat by the window, and read a book for hours.']
+
+['Margaret decides to go to the Jungle Brew House.
+'Margaret decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Margaret took a quarter from the tip jar.
+'Before ordering cake, Janice took a quarter from the tip jar.']
+
+['Margaret then sat by the window, and read a book for hours.
+'After ordering, Margaret stole a salt shaker and left.']
+
+['Sharon decides to go to the Jungle Brew House.
+'Sharon decides to go to the Deep Ocean Cafe.']
+
+['While ordering tea, Sharon noticed the barista’s new mustache.
+'While ordering tea, Teresa noticed the barista’s new mustache.']
+
+['After ordering, Sharon stole a salt shaker and left.
+'After ordering, Jeremy stole a salt shaker and left.']
+
+['Lori decides to go to the Jungle Brew House.
+'Lori decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Lori took a quarter from the tip jar.
+'While ordering tea, Lori noticed the barista’s new mustache.']
+
+['Lori then sat by the window, and read a book for hours.
+'After ordering, Lori stole a salt shaker and left.']
+
+['Before ordering cake, Sharon took a quarter from the tip jar.
+'Before ordering cake, Aaron took a quarter from the tip jar.']
+
+['After ordering, Sharon stole a salt shaker and left.
+'After ordering, Brenda stole a salt shaker and left.']
+
+['While ordering tea, Michelle noticed the barista’s new mustache.
+'Before ordering cake, Michelle took a quarter from the tip jar.']
+
+['After ordering, Michelle stole a salt shaker and left.
+'After ordering, Jason stole a salt shaker and left.']
+
+['Gary decides to go to the Jungle Brew House.
+'Gary decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Gary took a quarter from the tip jar.
+'While ordering tea, Gary noticed the barista’s new mustache.']
+
+['Gary then sat by the window, and read a book for hours.
+'After ordering, Gary stole a salt shaker and left.']
+
+['Before ordering cake, Charles took a quarter from the tip jar.
+'While ordering tea, Charles noticed the barista’s new mustache.']
+
+['After ordering, Charles stole a salt shaker and left.
+'After ordering, Judy stole a salt shaker and left.']
+
+['Before ordering cake, Larry took a quarter from the tip jar.
+'While ordering tea, Larry noticed the barista’s new mustache.']
+
+['Larry then sat by the window, and read a book for hours.
+'After ordering, Larry stole a salt shaker and left.']
+
+['Raymond decides to go to the Deep Ocean Cafe.
+'Raymond decides to go to the Jungle Brew House.']
+
+['While ordering tea, Raymond noticed the barista’s new mustache.
+'Before ordering cake, Raymond took a quarter from the tip jar.']
+
+['Raymond then sat by the window, and read a book for hours.
+'Angela then sat by the window, and read a book for hours.']
+
+['While ordering tea, Jeffrey noticed the barista’s new mustache.
+'Before ordering cake, Jeffrey took a quarter from the tip jar.']
+
+['Jeffrey then sat by the window, and read a book for hours.
+'After ordering, Jeffrey stole a salt shaker and left.']
+
+['Marilyn decides to go to the Deep Ocean Cafe.
+'Marilyn decides to go to the Jungle Brew House.']
+
+['While ordering tea, Marilyn noticed the barista’s new mustache.
+'While ordering tea, Robert noticed the barista’s new mustache.']
+
+['Marilyn then sat by the window, and read a book for hours.
+'After ordering, Marilyn stole a salt shaker and left.']
+
+['Before ordering cake, Megan took a quarter from the tip jar.
+'Before ordering cake, Anna took a quarter from the tip jar.']
+
+['After ordering, Megan stole a salt shaker and left.
+'Megan then sat by the window, and read a book for hours.']
+
+['Sara decides to go to the Deep Ocean Cafe.
+'Sara decides to go to the Jungle Brew House.']
+
+['While ordering tea, Sara noticed the barista’s new mustache.
+'Before ordering cake, Sara took a quarter from the tip jar.']
+
+['Sara then sat by the window, and read a book for hours.
+'After ordering, Sara stole a salt shaker and left.']
+
+['Frank decides to go to the Jungle Brew House.
+'Frank decides to go to the Deep Ocean Cafe.']
+
+['While ordering tea, Frank noticed the barista’s new mustache.
+'Before ordering cake, Frank took a quarter from the tip jar.']
+
+['After ordering, Frank stole a salt shaker and left.
+'Frank then sat by the window, and read a book for hours.']
+
+['Pamela decides to go to the Deep Ocean Cafe.
+'Pamela decides to go to the Jungle Brew House.']
+
+['While ordering tea, Pamela noticed the barista’s new mustache.
+'Before ordering cake, Pamela took a quarter from the tip jar.']
+
+['Pamela then sat by the window, and read a book for hours.
+'After ordering, Pamela stole a salt shaker and left.']
+
+['While ordering tea, Dennis noticed the barista’s new mustache.
+'While ordering tea, Nicole noticed the barista’s new mustache.']
+
+['After ordering, Dennis stole a salt shaker and left.
+'Dennis then sat by the window, and read a book for hours.']
+
+['Randy decides to go to the Deep Ocean Cafe.
+'Randy decides to go to the Jungle Brew House.']
+
+['While ordering tea, Randy noticed the barista’s new mustache.
+'Before ordering cake, Randy took a quarter from the tip jar.']
+
+['Randy then sat by the window, and read a book for hours.
+'After ordering, Randy stole a salt shaker and left.']
+
+['Amber decides to go to the Jungle Brew House.
+'Amber decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Amber took a quarter from the tip jar.
+'While ordering tea, Amber noticed the barista’s new mustache.']
+
+['Amber then sat by the window, and read a book for hours.
+'After ordering, Amber stole a salt shaker and left.']
+
+['Catherine decides to go to the Deep Ocean Cafe.
+'Catherine decides to go to the Jungle Brew House.']
+
+['Before ordering cake, Catherine took a quarter from the tip jar.
+'While ordering tea, Catherine noticed the barista’s new mustache.']
+
+['After ordering, Catherine stole a salt shaker and left.
+'Catherine then sat by the window, and read a book for hours.']
+
+['Teresa decides to go to the Jungle Brew House.
+'Teresa decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Teresa took a quarter from the tip jar.
+'While ordering tea, Teresa noticed the barista’s new mustache.']
+
+['Teresa then sat by the window, and read a book for hours.
+'After ordering, Teresa stole a salt shaker and left.']
+
+['Diane decides to go to the Jungle Brew House.
+'Diane decides to go to the Deep Ocean Cafe.']
+
+['Before ordering cake, Diane took a quarter from the tip jar.
+'While ordering tea, Diane noticed the barista’s new mustache.']
+
+['Diane then sat by the window, and read a book for hours.
+'After ordering, Diane stole a salt shaker and left.']
+
+['Lori decides to go to the Deep Ocean Cafe.
+'Lori decides to go to the Jungle Brew House.']
+
+['While ordering tea, Lori noticed the barista’s new mustache.
+'Before ordering cake, Lori took a quarter from the tip jar.']
+
+['Lori then sat by the window, and read a book for hours.
+'Nancy then sat by the window, and read a book for hours.']
+

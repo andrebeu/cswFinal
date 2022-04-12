@@ -1,0 +1,8 @@
+-- Experiment Generation Program
+
+When generate_experiments.sh [nsubs] [nstories] is called:
+- a temporary folder "exp_temp" is created 
+- cswMturk makes jspsych task scripts in "task_scripts_temp"
+- the following are copied into the "exp_temp": (i) task scripts, (ii) the contents of "csw_mturk_template", (iii) the database in "cswBehavioral"
+- the contents of "exp_temp" is rsynced into the VM into a folder named with the current date
+- the contents of "exp_temp" are deleted 
