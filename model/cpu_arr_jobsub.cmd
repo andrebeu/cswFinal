@@ -6,20 +6,8 @@
 #SBATCH -o ./slurms/output.%j.%a.out
 
 ## scotty
-# module load pyger/0.9
 conda init bash
 conda activate sem
-## tiger
-# module load anaconda3/4.4.0
-# source activate sem
-
-
-
-## use arr idx to get params
-## get arr idx
-# slurm_arr_idx=${SLURM_ARRAY_TASK_ID}
-# param_str=`python get_param_jobsub.py ${slurm_arr_idx}`
-# echo ${param_str}
 
 ## submit job
 srun python gs0317.py 
