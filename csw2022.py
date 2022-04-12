@@ -3,9 +3,6 @@ import pandas as pd
 import numpy as np
 import json
 
-from matplotlib import pyplot as plt
-plt.rcParams['font.size'] = 22
-
 # filler question exclusion threshold 
 THRESHOLD = 0.9
 
@@ -24,6 +21,7 @@ conditionL = [
 ]
 
 PATH_TO_CSW_DATASET = './csw_mturk_spring19.db'
+
 
 def get_sql_df(exp_version=None,verb=False):
   import sqlite3 as sql
@@ -97,8 +95,6 @@ def get_dataset_code(CONDITION):
   return dataset_code
 
 
-
-
 def get_block_indices(subj_df,num_stories=110,num_blocks=11):
   """ given a subj_df
   returns the indices of when blocks begins and ends
@@ -113,6 +109,7 @@ def get_block_indices(subj_df,num_stories=110,num_blocks=11):
   end_block_idx = np.hstack([begin_block_idx[1:],np.array([len(subj_df)])])
   return begin_block_idx,end_block_idx
 
+
 def include_block_idx(subj_df):
   """ inplace column
   """
@@ -121,6 +118,7 @@ def include_block_idx(subj_df):
   for block_num,(bidx,eidx) in enumerate(zip(begin_block_idx,end_block_idx)):
     subj_df.loc[bidx:eidx,'block'] = int(block_num)
   return subj_df
+
 
 def include_story_idx(subj_df,num_stories):
   """ inplace include column with stories
@@ -131,13 +129,13 @@ def include_story_idx(subj_df,num_stories):
   return subj_df
 
 
-
 frnode2depth = lambda x: DEPTH_DICT[x]
 DEPTH_DICT = {np.nan:100,'BEGIN':0,
               'NODE11':1,'NODE12':1,
               'NODE21':2,'NODE22':2,
               'NODE31':3,'NODE32':3,
               'END':4}
+
 
 def make_subj_df(psiturk_dstr,num_instruction_trials=3,stories_per_block=40):
   # initialize
@@ -163,7 +161,6 @@ def make_subj_df(psiturk_dstr,num_instruction_trials=3,stories_per_block=40):
   # depth
   subj_df['depth']=subj_df.fromnode.apply(frnode2depth)
   return subj_df
-
 
 
 def make_group_df(sql_df):
@@ -193,26 +190,14 @@ def get_thresholded_tqdf(group_tqdf,group_fqdf,threshold):
   masked_group_df = group_tqdf.loc[sub_mask,:,:]
   return masked_group_df
 
+
 def select_transition_probes(group_tqdf):
   """ remove transition from BEGIN node"""
   return group_tqdf[group_tqdf['fromnode']!='BEGIN']
   
-## threshold based on filler questions
 
-# def extract_subj_test_score(sql_df,thresh=0.9):
-#   group_df = make_group_df(sql_df)
-#   _,_,(_,group_qdf),(_,group_sdf) = group_df.groupby('type')
-#   (_,group_fqdf),(_,group_tqdf) = group_qdf.groupby('qtype')
-#   # tqdf > thresh
-#   masked_group_tqdf = get_thresholded_tqdf(group_tqdf,group_fqdf,threshold=thresh)
-#   num_subs = len(masked_group_tqdf.index.get_level_values('subjnum').unique())
-#   # select test scores
-#   data = -np.ones(num_subs)
-#   for idx,(_,subj_qdf) in enumerate(masked_group_tqdf.correct_response.groupby('subjnum')):
-#     data[idx] = np.mean([i[1].mean() for i in subj_qdf.groupby('story')][-40:])
-#   return data
   
-## FULL PIPELINE
+## database pipeline
 
 def load_dfs(condition):
   ## load psiturk `experiment dataframe`
@@ -235,13 +220,14 @@ def load_final_df(condition,threshold=THRESHOLD):
   plt_group_tqdf = select_transition_probes(plt_group_tqdf)
   return plt_group_tqdf
 
-
 def mov_avg(A,window):
   N = len(A)-window
   M = -np.ones([N])
   for t in range(N):
     M[t] = A[t:t+window].mean()
   return M
+
+## interface with model
 
 node2stateD = {
   "BEGIN":0,
