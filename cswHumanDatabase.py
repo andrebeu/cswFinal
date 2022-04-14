@@ -7,13 +7,13 @@ import json
 THRESHOLD = 0.9
 
 
-PATH_TO_CSW_DATASET = './csw_mturk_spring19.db'
-
-
 def get_sql_df(exp_version=None,verb=False):
   import sqlite3 as sql
   from glob import glob as glob
-  db_fpath = PATH_TO_CSW_DATASET
+  if exp_version == "RT40B1000cl":
+      db_fpath = './CSWparticipants.db'
+  else:
+    db_fpath = './csw_mturk_spring19.db'
   with sql.connect(db_fpath) as conn:
     # connection objecs represent the database
     # cursor objects point to rows in the database
@@ -56,10 +56,8 @@ def get_dataset_code(CONDITION):
     dataset_code = 'RT01B1000cl'
   elif CONDITION == 1 or CONDITION == 'interleaved_rep':
     dataset_code = 'csw1000block01.04.25.19'
-  # elif CONDITION == 2 or CONDITION == 'blocked':
-  #   dataset_code = '1000clq'
   elif CONDITION == 2 or CONDITION == 'blocked':
-    dataset_code = '1000clq'
+    dataset_code = 'RT40B1000cl'
   elif CONDITION == 3 or CONDITION == 'blocked_rep':
     dataset_code = 'csw1000block40.04.07.19'
   elif CONDITION == 4 or CONDITION == 'explicit_interleaved':
