@@ -1,0 +1,23 @@
+
+interleaved step1-vs-step2 
+ ttest_rel=-2.9987191842997314, p=0.004762443651739155
+interleaved_rep step1-vs-step2 
+ ttest_rel=-2.3656924402917, p=0.026802947687417443
+blocked step1-vs-step2 
+ ttest_rel=-1.4507778943495915, p=0.15628162080472657
+blocked_rep step1-vs-step2 
+ ttest_rel=-1.1281707842409565, p=0.26995868044946814
+explicit_interleaved step1-vs-step2 
+ ttest_rel=-1.7993888650199066, p=0.08202376817392028
+inserted_early step1-vs-step2 
+ ttest_rel=0.5186717553359091, p=0.6096811993029079
+inserted_early_rep step1-vs-step2 
+ ttest_rel=1.8288625968792827, p=0.08165889595047933
+inserted_middle step1-vs-step2 
+ ttest_rel=0.2724654019063934, p=0.7882032606346452
+inserted_middle_rep step1-vs-step2 
+ ttest_rel=-3.6944655460979123, p=0.0011974923739878074
+inserted_late step1-vs-step2 
+ ttest_rel=-2.464384675248579, p=0.021623410819361966
+inserted_late_rep step1-vs-step2 
+ ttest_rel=-2.1575245437681687, p=0.05393619026708109
