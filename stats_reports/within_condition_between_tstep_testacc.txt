@@ -4,7 +4,7 @@ interleaved step1-vs-step2
 interleaved_rep step1-vs-step2 
  ttest_rel=-2.3656924402917, p=0.026802947687417443
 blocked step1-vs-step2 
- ttest_rel=-1.4507778943495915, p=0.15628162080472657
+ ttest_rel=-3.1316776594255438, p=0.0037006262155880056
 blocked_rep step1-vs-step2 
  ttest_rel=-1.1281707842409565, p=0.26995868044946814
 explicit_interleaved step1-vs-step2 

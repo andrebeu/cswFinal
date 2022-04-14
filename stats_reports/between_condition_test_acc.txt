@@ -4,7 +4,7 @@ interleaved vs interleaved
 interleaved vs interleaved_rep
  ttest_ind=-1.2008384764920985, p=0.23445613558147502
 interleaved vs blocked
- ttest_ind=-9.916403442900622, p=4.872603296865684e-15
+ ttest_ind=-7.64403964190499, p=8.257388349933108e-11
 interleaved vs blocked_rep
  ttest_ind=-8.245386732486837, p=1.3291029501489201e-11
 interleaved vs explicit_interleaved
@@ -26,7 +26,7 @@ interleaved_rep vs interleaved
 interleaved_rep vs interleaved_rep
  ttest_ind=0.0, p=1.0
 interleaved_rep vs blocked
- ttest_ind=-6.575006192841958, p=1.7389308037824756e-08
+ ttest_ind=-4.9225939296426695, p=8.154065901939627e-06
 interleaved_rep vs blocked_rep
  ttest_ind=-5.380144747542349, p=2.184138203750332e-06
 interleaved_rep vs explicit_interleaved
@@ -44,33 +44,33 @@ interleaved_rep vs inserted_late
 interleaved_rep vs inserted_late_rep
  ttest_ind=-1.1068722837604048, p=0.2761191266256112
 blocked vs interleaved
- ttest_ind=9.916403442900622, p=4.872603296865684e-15
+ ttest_ind=7.64403964190499, p=8.257388349933108e-11
 blocked vs interleaved_rep
- ttest_ind=6.575006192841958, p=1.7389308037824756e-08
+ ttest_ind=4.9225939296426695, p=8.154065901939627e-06
 blocked vs blocked
  ttest_ind=0.0, p=1.0
 blocked vs blocked_rep
- ttest_ind=0.7103082968776255, p=0.4803593599950574
+ ttest_ind=-0.4111509305345296, p=0.6825036235780932
 blocked vs explicit_interleaved
- ttest_ind=5.698308878482472, p=3.434883807836474e-07
+ ttest_ind=4.261606862323935, p=7.029051571856695e-05
 blocked vs inserted_early
- ttest_ind=0.6764134803913703, p=0.5017195337613486
+ ttest_ind=-0.3733326912617506, p=0.7104185374538449
 blocked vs inserted_early_rep
- ttest_ind=0.32353147915706937, p=0.7475424356032244
+ ttest_ind=-0.7294486648197336, p=0.46893886333427337
 blocked vs inserted_middle
- ttest_ind=4.524514921598216, p=3.5450925768006906e-05
+ ttest_ind=3.200510845528556, p=0.0023616787693357577
 blocked vs inserted_middle_rep
- ttest_ind=6.073764597875566, p=1.1528218547921799e-07
+ ttest_ind=4.503121654798479, p=3.527648555994331e-05
 blocked vs inserted_late
- ttest_ind=3.615017166367956, p=0.0006443954680945719
+ ttest_ind=2.4424422464096254, p=0.01782940581822292
 blocked vs inserted_late_rep
- ttest_ind=4.163185493350661, p=0.00014373899870129693
+ ttest_ind=2.778819254042782, p=0.008056964818998265
 blocked_rep vs interleaved
  ttest_ind=8.245386732486837, p=1.3291029501489201e-11
 blocked_rep vs interleaved_rep
  ttest_ind=5.380144747542349, p=2.184138203750332e-06
 blocked_rep vs blocked
- ttest_ind=-0.7103082968776255, p=0.4803593599950574
+ ttest_ind=0.4111509305345296, p=0.6825036235780932
 blocked_rep vs blocked_rep
  ttest_ind=0.0, p=1.0
 blocked_rep vs explicit_interleaved
@@ -92,7 +92,7 @@ explicit_interleaved vs interleaved
 explicit_interleaved vs interleaved_rep
  ttest_ind=0.6441990019465704, p=0.5222247115518119
 explicit_interleaved vs blocked
- ttest_ind=-5.698308878482472, p=3.434883807836474e-07
+ ttest_ind=-4.261606862323935, p=7.029051571856695e-05
 explicit_interleaved vs blocked_rep
  ttest_ind=-4.565912021951628, p=2.8416478609894257e-05
 explicit_interleaved vs explicit_interleaved
@@ -114,7 +114,7 @@ inserted_early vs interleaved
 inserted_early vs interleaved_rep
  ttest_ind=4.989034672843535, p=1.0492634939723986e-05
 inserted_early vs blocked
- ttest_ind=-0.6764134803913703, p=0.5017195337613486
+ ttest_ind=0.3733326912617506, p=0.7104185374538449
 inserted_early vs blocked_rep
  ttest_ind=-0.00875307290631477, p=0.9930548378496484
 inserted_early vs explicit_interleaved
@@ -136,7 +136,7 @@ inserted_early_rep vs interleaved
 inserted_early_rep vs interleaved_rep
  ttest_ind=5.587416071128852, p=1.3582323077185823e-06
 inserted_early_rep vs blocked
- ttest_ind=-0.32353147915706937, p=0.7475424356032244
+ ttest_ind=0.7294486648197336, p=0.46893886333427337
 inserted_early_rep vs blocked_rep
  ttest_ind=0.35927468726900436, p=0.7210336194469376
 inserted_early_rep vs explicit_interleaved
@@ -158,7 +158,7 @@ inserted_middle vs interleaved
 inserted_middle vs interleaved_rep
  ttest_ind=1.0988280817500833, p=0.27810223305677706
 inserted_middle vs blocked
- ttest_ind=-4.524514921598216, p=3.5450925768006906e-05
+ ttest_ind=-3.200510845528556, p=0.0023616787693357577
 inserted_middle vs blocked_rep
  ttest_ind=-3.5841311575418726, p=0.0008420128073625844
 inserted_middle vs explicit_interleaved
@@ -180,7 +180,7 @@ inserted_middle_rep vs interleaved
 inserted_middle_rep vs interleaved_rep
  ttest_ind=0.3208521671110477, p=0.749775595506228
 inserted_middle_rep vs blocked
- ttest_ind=-6.073764597875566, p=1.1528218547921799e-07
+ ttest_ind=-4.503121654798479, p=3.527648555994331e-05
 inserted_middle_rep vs blocked_rep
  ttest_ind=-4.932654667797687, p=1.0136176695428779e-05
 inserted_middle_rep vs explicit_interleaved
@@ -202,7 +202,7 @@ inserted_late vs interleaved
 inserted_late vs interleaved_rep
  ttest_ind=1.8125362375354848, p=0.07643272092780702
 inserted_late vs blocked
- ttest_ind=-3.615017166367956, p=0.0006443954680945719
+ ttest_ind=-2.4424422464096254, p=0.01782940581822292
 inserted_late vs blocked_rep
  ttest_ind=-2.7555699784406014, p=0.008255929689885241
 inserted_late vs explicit_interleaved
@@ -224,7 +224,7 @@ inserted_late_rep vs interleaved
 inserted_late_rep vs interleaved_rep
  ttest_ind=1.1068722837604048, p=0.2761191266256112
 inserted_late_rep vs blocked
- ttest_ind=-4.163185493350661, p=0.00014373899870129693
+ ttest_ind=-2.778819254042782, p=0.008056964818998265
 inserted_late_rep vs blocked_rep
  ttest_ind=-3.331035721937903, p=0.0020087185647290544
 inserted_late_rep vs explicit_interleaved
