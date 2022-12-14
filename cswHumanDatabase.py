@@ -50,8 +50,6 @@ def get_sql_df(exp_version=None,verb=False):
 
 
 def get_dataset_code(CONDITION):
-  # if CONDITION == 0 or CONDITION == 'interleaved':
-  #   dataset_code = 'i1000cl'
   if CONDITION == 0 or CONDITION == 'interleaved':
     dataset_code = 'RT01B1000cl'
   elif CONDITION == 1 or CONDITION == 'interleaved_rep':
